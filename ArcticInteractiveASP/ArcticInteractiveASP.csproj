@@ -80,18 +80,85 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Blog.aspx" />
+    <Content Include="BlogLogin.aspx" />
+    <Content Include="BlogSpecific.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="CreateBlogPost.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\arctic_logo.png" />
+    <Content Include="images\bg.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BlogLogin.aspx.cs">
+      <DependentUpon>BlogLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BlogPost.cs" />
+    <Compile Include="BlogSpecific.aspx.cs">
+      <DependentUpon>BlogSpecific.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateBlogPost.aspx.cs">
+      <DependentUpon>CreateBlogPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\BlogLoginDB.cs" />
+    <Compile Include="Database\BlogSpecificDB.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Masterpage.Master.cs">
+      <DependentUpon>Masterpage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpage.Master.designer.cs">
+      <DependentUpon>Masterpage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Blog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Masterpage.Master" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
     <None Include="packages.config" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -102,7 +169,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

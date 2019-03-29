@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FridaiDKv2 {
+namespace ArcticInteractiveASP {
     
     
     public partial class Site {

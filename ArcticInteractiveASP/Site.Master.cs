@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FridaiDKv2
+namespace ArcticInteractiveASP
 {
     public partial class Site : System.Web.UI.MasterPage
     {

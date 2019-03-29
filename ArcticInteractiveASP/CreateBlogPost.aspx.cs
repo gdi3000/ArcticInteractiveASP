@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 
 
-namespace FridaiDKv2
+namespace ArcticInteractiveASP
 {
     public class CreateBlogPost : System.Web.UI.Page
     {

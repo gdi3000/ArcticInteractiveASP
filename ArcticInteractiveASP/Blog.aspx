@@ -19,7 +19,7 @@
                  foreach (var post in BlogPosts)
                  {
                      Response.Write($"<li class=\"row jumbotron\"> {post.Title}" +
-                                    $"<button type=\"button\" onclick=\"ChangePage({post.IdPosts})\"> Click here to read</button> " +
+                                    $"<button type=\"button\" onclick=\"ChangePage({post.IdBlog})\"> Click here to read</button> " +
                                     $"</li>");
                  }
 

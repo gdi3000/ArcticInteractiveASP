@@ -38,8 +38,8 @@ namespace ArcticInteractiveASP
                     while (reader.Read())
                     {
                         
-                        blogpost.Author = reader["Author"].ToString();
-                        blogpost.IdPosts = (int)reader["IdPosts"];
+                        
+                        blogpost.IdBlog = (int)reader["IdPosts"];
                         blogpost.Date = reader["Date"].ToString();
                         blogpost.Text = reader["Text"].ToString();
                         blogpost.Title = reader["Title"].ToString();

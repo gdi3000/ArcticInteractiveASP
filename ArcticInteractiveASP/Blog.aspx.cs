@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -27,19 +28,19 @@ namespace ArcticInteractiveASP
             List<BlogPost> list = new List<BlogPost>();
 
 
-            string query = "SELECT * FROM Posts";
-            using (SqlConnection connection = new SqlConnection())
+            string query = "SELECT * FROM Blog";
+            using (MySqlConnection connection = new MySqlConnection())
             {
-                connection.ConnectionString = ConfigurationManager.ConnectionStrings["FridaiBlog"].ConnectionString;
+                connection.ConnectionString = "Server=sql7.freemysqlhosting.net;Database=sql7285794;Uid=sql7285794;Pwd=mjbGqW4ly4;";
+                
                 connection.Open();
-                SqlCommand command = new SqlCommand(query, connection);
+                MySqlCommand command = new MySqlCommand(query, connection);
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
                         BlogPost blogpost = new BlogPost();
-                        blogpost.Author = reader["Author"].ToString();
-                        blogpost.IdPosts = (int)reader["IdPosts"];
+                        blogpost.IdBlog = (int)reader["IdBlog"];
                         blogpost.Date = reader["Date"].ToString();
                         blogpost.Text = reader["Text"].ToString();
                         blogpost.Title = reader["Title"].ToString();

@@ -27,18 +27,17 @@ namespace ArcticInteractiveASP
             string HashedPwd = Sha1Hash(password);
             Account DbUser = new Account();
 
-            if(BLDB.CheckLoginASP(user, password, HashedPwd).Equals(true))
+            if(BLDB.CheckLoginASP(user, password, HashedPwd))
             {
                 _LoggedInUser = DbUser;
                 Response.Redirect("CreateBlogPost.aspx"); 
             }
 
-                                 
-            if (BLDB.CheckLoginASP(user, password, HashedPwd).Equals(false))
+            else
             {
-                
                 Response.Redirect("Error.aspx");
-            }
+            }                   
+            
 
 
         }

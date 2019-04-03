@@ -4,7 +4,7 @@
    
  
     
-    <script src="/Public/Js/ChangeToSpecificBlog.js"></script>
+    <script src="/Js/ChangeToSpecificBlog.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

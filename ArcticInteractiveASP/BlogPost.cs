@@ -1,7 +1,7 @@
 ﻿namespace ArcticInteractiveASP
 {
 
-    public class BlogPost
+    public class BlogPost : System.Web.UI.Page
     {
         public BlogPost()
         {

@@ -106,6 +106,8 @@
     <Content Include="Global.asax" />
     <Content Include="images\arctic_logo.png" />
     <Content Include="images\bg.jpg" />
+    <Content Include="Js\ChangeToSpecificBlog.js" />
+    <Content Include="Js\Slider.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -122,7 +124,9 @@
       <DependentUpon>BlogLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BlogPost.cs" />
+    <Compile Include="BlogPost.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="BlogSpecific.aspx.cs">
       <DependentUpon>BlogSpecific.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

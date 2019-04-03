@@ -1,4 +1,4 @@
-﻿<%@ Page Title="BlogSpecific" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="BlogSpecific.aspx.cs" Inherits="ArcticInteractiveASP.BlogPost" %>
+﻿<%@ Page Title="BlogSpecific" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="BlogSpecific.aspx.cs" Inherits="ArcticInteractiveASP.BlogSpecific" %>
 
 
 
@@ -9,7 +9,7 @@
         
         <% %>
         <h1><% Response.Write(BlogPost.Title); %></h1>
-        <h1><% Response.Write(BlogPost.Author); %></h1>
+        
         <h2><% Response.Write(BlogPost.Date); %></h2>
         <p><% Response.Write(BlogPost.Text); %></p>
     

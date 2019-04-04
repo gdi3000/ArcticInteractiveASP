@@ -19,7 +19,7 @@ namespace ArcticInteractiveASP
         public void CheckLogin()
         {
 
-            BlogLoginDB BLDB = new BlogLoginDB();
+            
 
 
             string user = Request["user"];
@@ -27,7 +27,7 @@ namespace ArcticInteractiveASP
             string HashedPwd = Sha1Hash(password);
             Account DbUser = new Account();
 
-            if(BLDB.CheckLoginASP(user, password, HashedPwd))
+            if(BlogLoginDB.CheckLoginASP(user, password, HashedPwd))
             {
                 _LoggedInUser = DbUser;
                 Response.Redirect("CreateBlogPost.aspx"); 

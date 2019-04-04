@@ -9,7 +9,12 @@ namespace ArcticInteractiveASP.Database
     public class BlogSpecificDB
     {
 
-        public BlogPost LoadSingleBlog(string id)
+        public static BlogPost LoadSingleBlog(string id)
+        {
+            return BlogSpecificDB.LoadSingleBlogMethod(id);
+        }
+
+        private static BlogPost LoadSingleBlogMethod(string id)
         {
             BlogPost blogpost = new BlogPost();
             string query = "SELECT * FROM Blog WHERE IdBlog =?id";

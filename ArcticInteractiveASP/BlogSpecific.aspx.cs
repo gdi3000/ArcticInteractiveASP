@@ -28,11 +28,8 @@ namespace ArcticInteractiveASP
         private BlogPost LoadSingleBlog(string id)
         {
 
-            BlogSpecificDB dB = new BlogSpecificDB();
+           return BlogSpecificDB.LoadSingleBlog(id);
 
-           return dB.LoadSingleBlog(id);
-
-           
         }
 
         public List<BlogPost> BlogPostlist

@@ -14,7 +14,13 @@ namespace ArcticInteractiveASP.Database
     {
         private static Account _LoggedInUser;
 
-        public bool CheckLoginASP(string account, string password, string HashedPwd)
+
+        public static bool CheckLoginASP(string account, string password, string HashedPwd)
+        {
+            return (CheckLoginASPMethod(account, password, HashedPwd));
+        }
+
+        private static bool CheckLoginASPMethod(string account, string password, string HashedPwd)
         {
             
             Account DbUser = new Account();
